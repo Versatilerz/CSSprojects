@@ -1,8 +1,15 @@
+body {
+  align-items: center;
+}
+
 #box {
   border: 1px solid black;
   width: 400px;
   height: 400px;
   background-color: aliceblue;
+  margin: 200px auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px 45px rgb(99, 92, 92);
 }
 
 h3 {
