@@ -1,7 +1,29 @@
 body {
-  background-color: rgb(234, 234, 234);
-
+  background-color: rgb(245, 245, 245);
   font-family: "Space Mono", monospace;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 1;
   font-weight: 400;
-  font-style: normal;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 15px;
+}
+
+div {
+  width: 40%;
+  margin-left: 100px;
+  margin-top: 300px;
+}
+
+span {
+  text-shadow: 3px 3px 2px rgb(245, 5, 5), 6px 6px 4px rgb(245, 135, 1),
+    9px 9px 6px rgb(242, 255, 0), 12px 12px 8px rgb(174, 246, 6);
 }
