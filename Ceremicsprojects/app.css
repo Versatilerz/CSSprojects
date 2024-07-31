@@ -54,4 +54,10 @@ a.active {
 
 .card h2 {
   display: inline-block;
+  font-weight: 300;
+  margin: 8px 0 16px 0;
+}
+
+.gallary_container {
+  padding: 16px;
 }
