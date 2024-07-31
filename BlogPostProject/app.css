@@ -1,8 +1,8 @@
 body {
   font-family: Mukta, sans-serif;
   font-size: 16px;
-  margin: 0;
   padding: 0;
+  margin: 0;
   letter-spacing: 0.5px;
 }
 h1,
@@ -19,6 +19,7 @@ h1 {
   font-size: 80px;
   letter-spacing: -1.5px;
   font-weight: 400;
+  margin-top: 0;
 }
 
 h2 {
@@ -96,9 +97,33 @@ code {
   margin-left: 20px;
 }
 
+/* header styling */
+.header {
+  background-color: rgb(80, 66, 155);
+  color: white;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1,
+.header p {
+  width: 75%;
+  max-width: 900px;
+  margin: 16px;
+}
+
+.header hr {
+  width: 50%;
+  margin: 32px 0;
+}
+
 /* footer styling */
 .footer {
-  background-color: blueviolet;
+  background-color: rgb(80, 66, 155);
   margin-bottom: 0;
   color: white;
 }
