@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  border: 2px solid black;
+  height: 500px;
+  width: 500px;
+  background: linear-gradient(125deg, cyan, yellow, magenta);
+}
+
+.box2 {
+  border: 2px solid black;
+  height: 500px;
+  width: 500px;
+  background: radial-gradient(circle at bottom, cyan, yellow, magenta);
+}
+
+.box3 {
+  border: 2px solid black;
+  height: 500px;
+  width: 500px;
+  background: conic-gradient(cyan, yellow, magenta, cyan);
+}
+
+.box4 {
+  border: 2px solid black;
+  height: 500px;
+  width: 500px;
+  background: repeating-linear-gradient(-45deg, cyan, yellow, magenta 33.3333%);
+}
+
+.box5 {
+  border: 2px solid black;
+  height: 500px;
+  width: 500px;
+  background-image: url("images/people.jpg");
+  background-size: cover;
+  filter: hue-rotate(90deg);
+}
