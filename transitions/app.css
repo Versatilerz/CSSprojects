@@ -1,0 +1,21 @@
+.btn {
+  border: 2px solid black;
+  color: orangered;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  transition: background-color 1s ease-in 2s;
+}
+
+.btn:hover {
+  background-color: olive;
+}
+
+/* transition: property duration timing function delay */
+
+/* if worried about performance you should only animate the following properties */
+/* order of brower operations: Javascript style layout paint composite */
+/* animating widtt impacts style and forward */
+/* Animating color impacts paint and onwards */
+/* Animating opacity/transform only impacts composite --> best to animate  */
