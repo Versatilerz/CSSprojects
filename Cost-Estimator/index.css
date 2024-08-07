@@ -14,6 +14,7 @@ h1 {
 }
 
 .container {
+  position: relative;
   background-color: white;
   width: 100%;
   max-width: 900px;
@@ -21,6 +22,8 @@ h1 {
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
+  padding: 0 64px 64px 64px;
+  box-sizing: border-box;
 }
 
 .tabs {
@@ -30,17 +33,239 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
   color: rgb(200, 175, 255);
+  margin: 0 0 32px 0;
+  padding: 16px;
 }
 
 .tabs p {
-  padding: 1rem;
+  padding: 8px;
 }
 
 .tabs p:hover {
-  color: rgb(83, 49, 165);
+  color: rgb(83, 49, 156);
   cursor: pointer;
 }
 
 .tabs p.active {
-  color: rgb(83, 49, 165);
+  color: rgb(83, 49, 156);
+  position: relative;
 }
+
+.line {
+  background-color: rgb(231, 231, 231);
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 98px;
+}
+
+.tabs .active::before {
+  content: "";
+  width: 200%;
+  height: 4px;
+  background-color: rgb(83, 49, 156);
+  position: absolute;
+  bottom: -31px;
+  z-index: 2;
+  left: -50%;
+  border-radius: 10px;
+}
+
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-wrapper img {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toggle {
+  box-sizing: border-box;
+  background-color: rgb(83, 49, 156);
+  height: 32px;
+  width: 140px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px 0 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.toggle span:first-of-type {
+  color: white;
+}
+
+.toggle span:last-of-type {
+  background-color: white;
+  color: rgb(83, 49, 156);
+  padding: 4px 16px;
+  border-radius: 20px;
+}
+
+.sessions-card {
+  background-color: rgb(250, 247, 255);
+  text-align: center;
+  padding: 32px;
+  margin: 16px 0;
+  width: 50%;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.sessions-card p {
+  color: rgb(44, 44, 44);
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.sessions-card .number {
+  color: rgb(83, 49, 156);
+  font-size: 54px;
+  margin: 0;
+}
+
+.description {
+  line-height: 32px;
+  margin: 16px 0 32px 0;
+}
+
+.slider {
+  width: 100%;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.slider .bar {
+  width: 100%;
+  height: 16px;
+  background-color: rgb(248, 248, 248);
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 20px;
+}
+
+.slider .progress {
+  width: 43%;
+  height: 18px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 10, 74, 1) 36%,
+    rgba(83, 49, 156, 1) 100%
+  );
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider .point {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: rgb(83, 49, 156);
+  position: absolute;
+  top: -5px;
+  left: 41%;
+  border: 2px solid white;
+  transition: 0.15s transform ease;
+}
+
+.slider .point:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.slider .scale ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  font-weight: bold;
+  color: rgb(166, 166, 166);
+}
+
+.card-wrapper {
+  display: flex;
+}
+
+.card {
+  background-color: rgb(250, 247, 255);
+  border-radius: 16px;
+  margin: 16px;
+  box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.1);
+  padding: 16px 32px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(83, 49, 156);
+  transition: 0.2s transform ease;
+  position: relative;
+}
+
+.card .top-section {
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+.card .top-section p {
+  margin: 4px 0;
+}
+
+.card .price {
+  font-size: 42px;
+  color: rgb(44, 44, 44);
+}
+
+.card hr {
+  width: 30%;
+  border: 1px solid rgb(210, 210, 210);
+}
+
+.card button {
+  border: none;
+  color: white;
+  background-color: rgb(83, 49, 156);
+  padding: 16px;
+  border-radius: 10px;
+  transition: 0.15s transform ease;
+  font-weight: bold;
+}
+
+.card button:hover {
+  transform: scale(1.05);
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.card .save-header {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 10, 74, 1) 36%,
+    rgba(83, 49, 156, 1) 100%
+  );
+  position: absolute;
+  top: -24px;
+  left: 0;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* 
+.card::before {
+  content: "";
+  height: 15px;
+  
+
+
+} */
