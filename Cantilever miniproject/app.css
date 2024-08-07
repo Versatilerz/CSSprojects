@@ -28,3 +28,26 @@ span {
     9px 9px 6px rgb(242, 255, 0), 12px 12px 8px rgb(174, 246, 6),
     -6px -6px 10px red;
 }
+
+@media only screen and (max-width: 1750px) {
+  div {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1325px) {
+  h1 {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  div {
+    width: 90%;
+    margin: 300px auto;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
