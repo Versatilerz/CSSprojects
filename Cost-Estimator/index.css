@@ -208,6 +208,31 @@ h1 {
   position: relative;
 }
 
+@media only screen and (max-width: 800px) {
+  .card {
+    width: 100%;
+  }
+
+  .card-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+
+  .sessions-card {
+    width: 80%;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  body {
+    padding: 16px;
+  }
+}
+
 .card .top-section {
   padding: 8px;
   text-transform: uppercase;
