@@ -1,6 +1,6 @@
 .container {
   height: 700px;
-  width: 80%;
+  width: 800px;
   margin: 200px auto;
   background-color: black;
   box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
@@ -40,15 +40,17 @@
     "a a c"
     "b b c"; */
 
-  grid-template-columns: 1fr 150px;
+  /* grid-template-columns: 1fr 150px;
   grid-template-rows: 100px 1fr 100px;
   grid-template-areas:
     "navbar navbar"
     "main sidebar"
-    "footer footer";
+    "footer footer"; */
+
+  grid-template-columns: repeat(auto-fill, 300px);
 }
 
-.itemOne {
+/* .itemOne {
   grid-area: navbar;
 }
 
@@ -62,7 +64,7 @@
 
 .itemFour {
   grid-area: main;
-}
+} */
 
 /* .container .itemOne {
   grid-column: 2;
