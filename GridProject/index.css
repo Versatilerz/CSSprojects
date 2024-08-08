@@ -1,3 +1,7 @@
+body {
+  font-family: Poppings, sans-serif;
+}
+
 .project {
   position: relative;
   width: 300px;
@@ -20,4 +24,14 @@
   justify-content: center;
   align-items: center;
   margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project .overlay:hover {
+  opacity: 1;
+  cursor: pointer;
 }
