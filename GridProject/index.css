@@ -75,7 +75,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: bold;
   letter-spacing: 2px;
   opacity: 0;
@@ -85,4 +85,32 @@ body {
 .project .overlay:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+  .project-grid {
+    grid-template-areas:
+      "eth eth"
+      "alphabet travaler"
+      "cube astro"
+      "insta insta"
+      "cup foam"
+      "dimensional dimensional";
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-grid {
+    grid-template-areas:
+      "eth eth"
+      "alphabet alphabet"
+      "travaler travaler"
+      "cube astro"
+      "insta insta"
+      "cup cup"
+      "foam foam"
+      "dimensional dimensional";
+    max-width: 100%;
+  }
 }
