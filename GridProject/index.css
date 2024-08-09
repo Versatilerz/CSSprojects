@@ -2,9 +2,60 @@ body {
   font-family: Poppings, sans-serif;
 }
 
+.project-grid {
+  display: grid;
+  grid-gap: 16px;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  grid-template-areas:
+    "eth eth alphabet"
+    "eth eth travaler"
+    "cube astro travaler"
+    "cup insta insta"
+    "cup insta insta"
+    "foam foam dimensional"
+    "foam foam dimensional";
+}
+
+#eth {
+  grid-area: eth;
+}
+
+#alphabet {
+  grid-area: alphabet;
+}
+
+#cube {
+  grid-area: cube;
+}
+
+#astro {
+  grid-area: astro;
+}
+
+#travaler {
+  grid-area: travaler;
+}
+
+#cup {
+  grid-area: cup;
+}
+
+#insta {
+  grid-area: insta;
+}
+
+#foam {
+  grid-area: foam;
+}
+
+#dimensional {
+  grid-area: dimensional;
+}
+
 .project {
   position: relative;
-  width: 300px;
 }
 
 .project img {
