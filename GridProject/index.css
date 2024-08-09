@@ -40,6 +40,41 @@ body {
   height: 24px;
 }
 
+.mobileNav {
+  width: 80px;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: -160px;
+  padding: 16px;
+  transition: transform 0.5s;
+}
+
+.mobileNav a {
+  margin: 16px 0;
+  text-decoration: none;
+  color: black;
+}
+
+.mobileNav a:hover {
+  text-decoration: underline;
+}
+
+.mobileNav img {
+  width: 24px;
+  height: 24px;
+}
+
+.openDrawer {
+  transform: translateX(-160px);
+}
+
 .project-grid {
   display: grid;
   grid-gap: 16px;
@@ -193,7 +228,9 @@ body {
   padding: 56px;
 }
 
-.navbar .bar {
+.navbar .bar1,
+.bar2,
+.bar3 {
   background-color: black;
   height: 4px;
   width: 36px;
@@ -205,4 +242,49 @@ body {
   height: 50px;
   width: 50px;
   display: none;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.animateBar1 {
+  animation: fadeBar1 0.5s forwards;
+}
+
+.animateBar2 {
+  animation: fadeBar2 0.5s forwards;
+}
+
+.animateBar3 {
+  animation: fadeBar3 0.5s forwards;
+}
+
+@keyframes fadeBar1 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(45deg) translate(4px, 7px);
+  }
+}
+
+@keyframes fadeBar2 {
+  0% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeBar3 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-45deg) translate(4px, -7px);
+  }
 }
