@@ -2,12 +2,48 @@ body {
   font-family: Poppings, sans-serif;
 }
 
+.container {
+  max-width: 90%;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 0;
+}
+
+.navbar .left {
+  font-size: 32px;
+  /* font-weight: 400; */
+}
+
+.navbar .right {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .right a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .right a:hover {
+  text-decoration: underline;
+}
+
+.navbar .right img {
+  width: 24px;
+  height: 24px;
+}
+
 .project-grid {
   display: grid;
   grid-gap: 16px;
   width: 100%;
-  max-width: 90%;
-  margin: auto;
   grid-template-areas:
     "eth eth alphabet"
     "eth eth travaler"
@@ -92,6 +128,9 @@ body {
 }
 
 @media only screen and (max-width: 1100px) {
+  .container {
+    max-width: 100%;
+  }
   .project-grid {
     grid-template-areas:
       "eth eth"
@@ -124,4 +163,9 @@ body {
   .project .overlay {
     font-size: 20px;
   }
+}
+
+.footer {
+  text-align: center;
+  padding: 56px;
 }
