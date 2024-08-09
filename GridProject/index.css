@@ -159,13 +159,50 @@ body {
       "foam foam"
       "dimensional dimensional";
     max-width: 100%;
+    margin-top: 100px;
   }
   .project .overlay {
     font-size: 20px;
+  }
+
+  .navbar .right {
+    display: none;
+  }
+
+  .navbar {
+    padding: 64px 24px 24px 24px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: white;
+    width: 100%;
+  }
+
+  .navbar .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .footer {
   text-align: center;
   padding: 56px;
+}
+
+.navbar .bar {
+  background-color: black;
+  height: 4px;
+  width: 36px;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+.hamburger {
+  height: 50px;
+  width: 50px;
+  display: none;
 }
