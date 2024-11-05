@@ -163,10 +163,24 @@ subtitle2 {
   border: none;
   background-color: transparent;
   color: var(--primary-accent);
-  transition: all 0.15 ease;
+  transition: all 0.15s ease;
 }
 
 .secondary-button:hover {
   opacity: 0.75;
   cursor: pointer;
+}
+
+.with-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.with-icon > img {
+  transition: transform 0.25s ease;
+}
+
+.with-icon:hover > img {
+  transform: translateX(5px);
 }
