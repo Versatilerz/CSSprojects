@@ -45,7 +45,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding: var(--spacing-sm) 0 0 0;
-  background-color: grey;
+  background-color: var(--bg-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -293,4 +293,19 @@ main {
 
 .hero p {
   max-width: 480px;
+}
+
+/* partners section */
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: var(--spacing-xl) 0;
+  grid-gap: var(--spacing-md) var(--spacing-lg);
+}
+
+.partners-grid img {
+  height: 60px;
+  place-self: center;
 }
